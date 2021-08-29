@@ -1,3 +1,8 @@
+@keyframes pokeAppear {
+    0% { opacity: 1; }
+    100% {opacity: 0}
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -19,7 +24,7 @@
     float: left;
     width: 40vmin;
     height: 60vmin;
-    background: rgb(44, 44, 44);
+    background: rgb(206, 17, 49);
     border-radius: 3%;
 }
 
@@ -28,7 +33,7 @@
     float: right;
     width: 40vmin;
     height: 60vmin;
-    background: rgb(143, 139, 139);
+    background: rgb(212, 19, 51);
     border-radius: 5%;
     clip-path: polygon(35% 0, 65% 13%, 100% 14%, 100% 70%, 100% 84%, 100% 100%, 0 100%, 0% 70%, 0% 35%, 0 0);
 }
@@ -64,8 +69,9 @@
     right: 3vmin;
 }
 
-.sprite {
+.sprite, .spriteWhite {
     width: 100%;
+    position: absolute;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -75,4 +81,15 @@
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.bynfilter {
+    animation: pokeAppear 1s 0.3s ease-in-out forwards;
+    filter: grayscale(100%) brightness(0%) invert(100%);
+    -webkit-filter: grayscale(100%) brightness(0%) invert(100%);
+}
+
+.pokeBoton1 {
+    background: blue;
+    size: 50px;
 }
