@@ -78,9 +78,12 @@
 }
 
 .nombre {
+    position:relative;
+    top: 1vmin;
     display: flex;
     align-items: center;
     justify-content: center;
+    font-weight: bold;
 }
 
 .bynfilter {
@@ -89,7 +92,22 @@
     -webkit-filter: grayscale(100%) brightness(0%) invert(100%);
 }
 
-.pokeBoton1 {
-    background: blue;
-    size: 50px;
+.botonera {
+    position: absolute;
+    top: 27vmin;
+    left: 5vmin;
+}
+
+#randomBtn {
+    background-color: rgb(74, 97, 230);
+    color: white;
+    width: 9vmin;
+}
+
+.stats {
+    position:relative;
+    top: 3vmin;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
